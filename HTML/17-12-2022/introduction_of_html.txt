@@ -1,0 +1,35 @@
+select full page content -> ctrl + A
+copy -> ctrl + c
+paste -> ctrl + v
+cut -> ctrl + x
+save -> ctrl + s
+undo -> ctrl + z
+redu -> ctrl + y
+
+
+HTML -> Hypertext Markup Language.
+
+when started -> 1993
+who's start?? -> Tim berner's lee
+
+why used -> make a structure of webpage.
+
+tags, elements, attributes
+
+what is tag??
+-> a word written between angle bracket is known as tag.
+for ex. <html>.
+
+what is an element??
+-> a word written between in angle bracket. that a particular word is known as element.
+for ex. in <html> tag, html is an element.
+
+what is an attributes??
+-> additional functionality.
+for, <body bgcolor="red">. in this bgcolor is attribute. 
+
+what is a container??
+for ex, we written structure in <html>...</html>. so <html> is indicate a container. 
+
+non-closing / void tag : 
+<br/>, <hr/>, <img />, <link/>, <meta/>
