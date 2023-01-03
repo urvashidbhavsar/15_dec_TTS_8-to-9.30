@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <!-- <h1>Registration Form</h1> -->
+      <!-- background-color, border-color, color(text-color), text-align -->
+      <fieldset
+        style="
+          width: 30%;
+          background-color: rgb(229, 213, 207);
+          border-radius: 30px;
+        "
+      >
+        <legend style="text-align: center"><h2>Registration Form</h2></legend>
+        <form action="" method="post">
+          <table cellpadding="10px">
+            <tr>
+              <td style="text-align: right">First Name</td>
+              <td><input type="text" placeholder="Enter First name" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Last name</td>
+              <td><input type="text" placeholder="Enter Last name" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Date of Birth</td>
+              <td><input type="date" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Gender</td>
+              <td>
+                <input type="radio" name="gen" /> <label>Male</label>
+                <input type="radio" name="gen" /> <label>Female</label>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Mobile No</td>
+              <td>
+                <input type="text" placeholder="0000000000" maxlength="10" />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Address</td>
+              <td><textarea name="add" id="" cols="30" rows="3"></textarea></td>
+            </tr>
+            <tr>
+              <td style="text-align: right">City</td>
+              <td>
+                <select name="">
+                  <option value="">---select----</option>
+                  <option value="">Surat</option>
+                  <option value="">Baroda</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Pincode</td>
+              <td>
+                <input
+                  type="text"
+                  maxlength="6"
+                  placeholder="000000"
+                  size="4"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: right">Proof</td>
+              <td>
+                <input type="checkbox" name="c1" /><label for=""
+                  >Adhar card</label
+                >
+                <input type="checkbox" name="c2" /><label for=""
+                  >Voter ID</label
+                >
+                <input type="checkbox" name="c3" /><label for=""
+                  >Pan card</label
+                >
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="text-align: center">
+                <input type="submit" name="submit" value="Register" />
+                <input type="reset" name="reset" value="Clear" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </fieldset>
+    </center>
+  </body>
+</html>
