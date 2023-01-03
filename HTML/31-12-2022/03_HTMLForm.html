@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--  style="border-width: 2px; border-color: black; border-style: solid" -->
+  <body>
+    <!-- it is html form 
+        action -> page name which you want to forwarded
+
+        method -> there is two type of method -> get / post
+        get -> it is display form information in URL. or it has some limitation to display value. max - 255
+
+        post -> it is secure. it is wrap / bind form information and send to the next page.
+    -->
+    <form action="02_progress.html" method="get" name="form1">
+      <!-- input type text -->
+      <label for="fname">First name</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="Enter First name"
+        required
+      />
+      <br /><br />
+      <!-- input type radio -> used to select option from many options 
+        give same name in input type radio.
+    -->
+      <label for="">Gender</label>
+      <input type="radio" name="gen" checked /><label for="">Male</label>
+      <input type="radio" name="gen" /><label for="">Female</label>
+      <input type="radio" name="gen" /><label for="">Others</label> <br /><br />
+
+      <!-- input type checkbox -> used to many selection from given options-->
+      <label for="">Subject</label>
+      <input type="checkbox" name="c1" /><label for="">HTML</label>
+      <input type="checkbox" name="c2" /><label for="">CSS</label>
+      <input type="checkbox" name="c3" /><label for="">JS</label> <br /><br />
+
+      <!-- dropdown list -> select-option -->
+      <label for="">Subject</label>
+      <select name="" id="">
+        <option value="">---select---</option>
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JS</option>
+      </select>
+      <br /><br />
+      <!-- text area -> summary, feedback, address -->
+      <label for="">Address</label>
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="3"
+        placeholder="Type address"
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- input type date -> calendar -> html5 -->
+      <label for="">Date Of Birth</label>
+      <input type="date" name="" id="" />
+      <br /><br />
+      <!-- upload file -> input type file -->
+      <label for="">Upload files</label>
+      <input type="file" name="" id="" />
+      <br /><br />
+      <!-- select number -->
+      <label for="">Quantity select :</label>
+      <input type="number" name="" id="" />
+      <br /><br />
+
+      <!-- input type color -> select colors from pallate -->
+      <input type="color" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <input type="datetime" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <input type="datetime-local" name="" id="" />
+      <br /><br />
+
+      <!-- updation -> html5 -->
+      <input type="email" placeholder="Email" />
+      <br /><br />
+
+      <!-- input type image work like button -->
+      <input
+        type="image"
+        name=""
+        id=""
+        src="img1.jpg"
+        height="50px"
+        width="50px"
+      />
+      <br /><br />
+
+      <!-- input type month -> HTML5-->
+      <input type="month" name="" id="" />
+      <br /><br />
+
+      <input type="password" placeholder="password" />
+      <br /><br />
+
+      <!-- input type range -> HTML5 -->
+      <input type="range" />
+      <br /><br />
+      <!-- HMTL5 -->
+      <input type="search" />
+      <br /><br />
+      <input type="time" /><br /><br />
+      <input type="week" /><br /><br />
+      <input type="tel" />
+      <input type="submit" value="Register" />
+      <input type="button" value="Button" />
+      <input type="reset" value="clear" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
