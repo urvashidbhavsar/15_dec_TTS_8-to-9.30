@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        /* background: short hand property; */
+        /* background-color: lightblue; */
+        background-image: url(images/image1.jpg);
+        /* initial -> it take its default value */
+        /* inherit -> it take its property from parent */
+        background-position: center;
+        /* cover / contain */
+        background-size: cover;
+        /* no-repeat / repeat / repeat-x / repeat-y */
+        background-repeat: no-repeat;
+        background-attachment: fixed / scroll;
+      }
+      .back-img {
+        height: 300px;
+        width: 100%;
+        background-image: url(images/image2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+      section {
+        height: 500px;
+        background-color: rgb(226, 206, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="back-img"></div>
+
+    <section></section>
+  </body>
+</html>
