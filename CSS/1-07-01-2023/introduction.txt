@@ -1,0 +1,28 @@
+what is CSS??
+-> it is Cascading style sheet. which is provide you make effective designing, decoration in our website.
+
+-> create a division.
+
+css and css3 ->
+in css there is basic properties.
+in css3 advanced properties like display flex and grid
+
+there is a three ways to create(prepare) css:
+(1) inline css -> apply in the Tag.
+(2) internal css -> using <style> tag in <head> section.
+(3) External css -> create an external file and link with <link> tag.
+
+css syntax : (internal and external)
+selector {
+    properties : value;
+}
+
+inline css :
+style = " properties : value "
+
+css selector :-
+(1) element selector 
+(2) class selector
+(3) ID selector
+(4) univarsal selector (global)
+(5) group selector

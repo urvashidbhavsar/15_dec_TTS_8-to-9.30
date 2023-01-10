@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .div1 {
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        /* if we apply 1 value it consider all sides => border-radius: 20px;*/
+        /* if we apply 2 value it consider across the value => border-radius: 20px 50px; */
+
+        /* top-left top-right bottom-right bottom-left */
+        /* border-radius: 150px 20px 150px 40px; */
+
+        border-radius: 50%;
+        /* border-top-left-radius: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 100px; */
+      }
+
+      .img1 {
+        height: 200px;
+        width: 200px;
+        /* border-radius: 50%; */
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1"></div>
+    <br /><br />
+
+    <img src="images/image1.jpg" alt="" class="img1" />
+  </body>
+</html>
