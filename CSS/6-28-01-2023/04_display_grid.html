@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .div1,
+      .div3,
+      .div5,
+      .div7,
+      .div9 {
+        /* margin: 10px; */
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      }
+      .div2,
+      .div4,
+      .div6,
+      .div8,
+      .div10 {
+        /* margin: 10px; */
+        height: 100px;
+        width: 100px;
+        background-color: rgb(1, 28, 29);
+      }
+      .main {
+        border: 2px solid black;
+        display: grid;
+        /* grid-template-columns: auto auto auto auto auto; */
+        /* auto -> change width auto when content are more size */
+        /* 1fr = 1 fraction - fix size of width  */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        padding: 20px;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 30px;
+        justify-items: center;
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- display grid provide tabular form -->
+    <div class="main">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+      <div class="div6"></div>
+      <div class="div7"></div>
+      <div class="div8"></div>
+      <div class="div9"></div>
+      <div class="div10"></div>
+    </div>
+  </body>
+</html>
