@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+          transition: duration / timing function / property ;
+        transition-property: all;
+        transition-delay: ;
+        transition-duration: ;
+        transition-timing-function: ease / ease-in / ease-out / ease-in-out /linear;
+         */
+      div {
+        height: 100px;
+        width: 100px;
+        margin-top: 20px;
+      }
+      .div1 {
+        background-color: rgb(4, 60, 145);
+        transition-property: all;
+        transition-delay: 2s;
+        transition-duration: 1s;
+        transition-timing-function: ease;
+      }
+      .div1:hover {
+        width: 250px;
+      }
+      .div2 {
+        background-color: darkcyan;
+        transition: 1s all ease-in;
+      }
+      .div2:hover {
+        width: 250px;
+      }
+      .div3 {
+        background-color: brown;
+        transition: 1s ease-out all;
+      }
+      .div3:hover {
+        width: 250px;
+      }
+      .div4 {
+        background-color: darkcyan;
+        transition: 1s ease-in-out all;
+      }
+      .div4:hover {
+        width: 250px;
+      }
+      .div5 {
+        background-color: magenta;
+        transition: 1s linear all;
+      }
+      .div5:hover {
+        width: 250px;
+      }
+      .div6 {
+        background-color: darkblue;
+        transition: 1s all cubic-bezier(1, 0, 0, 1);
+      }
+      .div6:hover {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- transition => smooth move -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+  </body>
+</html>

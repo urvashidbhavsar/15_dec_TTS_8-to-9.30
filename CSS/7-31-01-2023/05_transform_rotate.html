@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* set deg value in rotation 0 to 360 */
+      div {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
+        background-color: darkcyan;
+        transition: 1s ease all;
+      }
+      .div1:hover {
+        transform: rotate(180deg);
+      }
+      .div2:hover {
+        transform: rotateX(180deg);
+      }
+      .div3:hover {
+        transform: rotateY(180deg);
+      }
+      .div4:hover {
+        transform: rotateX(133deg) rotateY(7deg) rotateZ(82deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">Rotate</div>
+    <div class="div2">Rotate-X</div>
+    <div class="div3">Rotate-Y</div>
+    <div class="div4">Rotate-Z</div>
+  </body>
+</html>
