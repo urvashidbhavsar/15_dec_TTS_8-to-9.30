@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 10px auto;
+        height: 100px;
+        width: 100px;
+        background-color: rebeccapurple;
+        transition: 1s all ease;
+      }
+      .div1:hover {
+        transform: scale(0.5);
+      }
+      .div2:hover {
+        transform: scale(1.2);
+      }
+      .div3:hover {
+        transform: scale(-0.5);
+      }
+      .div4:hover {
+        transform: scaleX(1.2);
+      }
+      .div5:hover {
+        transform: scaleY(0.5);
+      }
+      .div6:hover {
+        transform: scaleX(1.2) scaleY(0.5) rotate(45deg) scaleZ(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- scale is do value is zoom in or out -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <div class="div4"></div>
+    <div class="div5"></div>
+    <div class="div6"></div>
+  </body>
+</html>

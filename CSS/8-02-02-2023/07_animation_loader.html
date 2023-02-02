@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main {
+        height: 200px;
+        width: 200px;
+        border-top: 5px solid rgb(2, 39, 2);
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 170px auto;
+        animation: loader 2s ease infinite;
+        border-radius: 50%;
+      }
+      .sub1 {
+        height: 150px;
+        width: 150px;
+        border-bottom: 5px solid darkgreen;
+        border-top: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 20px;
+        animation: loader 2s ease infinite;
+        border-radius: 50%;
+      }
+      .sub2 {
+        height: 100px;
+        width: 100px;
+        border-top: 5px solid rgb(6, 216, 6);
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin: 20px;
+        animation: loader 2s ease infinite;
+        border-radius: 50%;
+      }
+      @keyframes loader {
+        0% {
+          transform: rotate(0deg);
+        }
+        /* 20% {
+          transform: rotate(45deg);
+        }
+        40% {
+          transform: rotate(90deg);
+        }
+        60% {
+          transform: rotate(180deg);
+        }
+        80% {
+          transform: rotate(270deg);
+        } */
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub1">
+        <div class="sub2"></div>
+      </div>
+    </div>
+  </body>
+</html>
