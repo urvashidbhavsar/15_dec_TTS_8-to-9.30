@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: lightblue;
+}
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: auto auto auto; */
+  gap: 20px;
+  padding: 50px;
+  justify-items: center;
+}
+button {
+  height: 40px;
+  width: 120px;
+  border: 2px solid white;
+  background: transparent;
+  transition: 0.5s all ease;
+  font-weight: 700;
+}
+.btn1:hover {
+  transform: rotateX(180deg);
+}
+.btn2:hover {
+  transform: rotateY(180deg);
+}
+.btn3:hover {
+  transform: scale(1.2);
+}
+.btn4:hover {
+  transform: scale(0.8);
+}
+.btn5:hover {
+  transform: skewX(10deg);
+}
+.btn6:hover {
+  transform: skewY(10deg);
+}
+.btn7:hover {
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+}
+.btn8:hover {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+.btn9:hover {
+  border: 5px ridge red;
+  background-color: aquamarine;
+}
+.btn10 {
+  border-radius: 20px;
+}
+.btn10:hover {
+  border-radius: 0;
+  border: 5px dotted red;
+}
+.btn11:hover {
+  transform: translateX(10px);
+}
+.btn12:hover {
+  transform: translateY(10px);
+}
+a {
+  color: blue;
+  text-decoration: none;
+  font-size: 30px;
+}
+.link1::before {
+  content: "";
+}
+.link1::after {
+  content: "";
+  height: 2px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transform: scaleX(0);
+  transition: 1s all ease;
+}
+.link1:hover::after {
+  transform: scaleX(1);
+}
+.link2::before {
+  content: "";
+}
+.link2::after {
+  content: "";
+  height: 2px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transform: scaleY(0);
+  transition: 1s all ease;
+}
+.link2:hover::after {
+  transform: scaleY(1);
+}
+.link3::before {
+  content: "";
+}
+.link3::after {
+  content: "";
+  height: 2px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transform-origin: 0% 100%;
+  /* transform-origin: 100% 0%; -> if we start from right*/
+  transform: scaleX(0);
+  transition: 1s all ease;
+}
+.link3:hover::after {
+  transform: scaleX(1);
+}
+.link4 {
+  position: relative;
+}
+.link4::before {
+  content: "";
+}
+.link4::after {
+  content: "";
+  height: 2px;
+  width: 11px;
+  background-color: red;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 2px;
+}
