@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        gap: 10px;
+      }
+      @media (max-width: 576px) {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+        .main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 576px) {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+        .main {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 768px) {
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+      @media (min-width: 992px) {
+        .main {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .main {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub">
+        <img src="images/img1.webp" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img2.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img3.jfif" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img4.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img5.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img6.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img7.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img8.jpg" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img1.webp" alt="" />
+      </div>
+      <div class="sub">
+        <img src="images/img10.jfif" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

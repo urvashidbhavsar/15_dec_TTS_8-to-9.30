@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        width: 40%;
+        margin: auto;
+      }
+      .row {
+        display: flex;
+        padding: 5px;
+      }
+      .col-1 {
+        flex: 1;
+        text-align: right;
+        padding: 5px;
+        font-size: 20px;
+      }
+      .col-2 {
+        flex: 2;
+        padding: 5px;
+      }
+      input[type="text"],
+      [type="password"] {
+        height: 30px;
+        width: 250px;
+        border-radius: 5px;
+        border: 2px solid black;
+        padding: 6px;
+      }
+      input[type="radio"] {
+        height: 20px;
+        width: 20px;
+      }
+      button {
+        height: 35px;
+        width: 120px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div class="row">
+        <div class="col-1">
+          <label for="">first name</label>
+        </div>
+        <div class="col-2">
+          <input type="text" placeholder="Enter name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <label for="">Middle Name</label>
+        </div>
+        <div class="col-2">
+          <input type="text" placeholder="Enter Middle name" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <label for="">Gender</label>
+        </div>
+        <div class="col-2">
+          <input type="radio" name="gen" id="" />Male
+          <input type="radio" name="gen" id="" />Female
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <label for="">Password</label>
+        </div>
+        <div class="col-2">
+          <input type="password" name="" id="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <button>Click Here</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
