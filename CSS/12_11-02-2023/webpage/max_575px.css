@@ -1,0 +1,24 @@
+@media (max-width:576px) {
+
+    .container {
+        margin: 0px 30px;
+    }
+
+    /* ============= header section ================= */
+    .header .bg-image {
+        height: 600px;
+    }
+
+    .header .header-flex .logo {
+        flex: 10;
+    }
+
+    .header .header-flex .nav {
+        display: none;
+    }
+
+    .header .header-flex .show_menu {
+        display: block;
+        padding-left: 10px;
+    }
+}

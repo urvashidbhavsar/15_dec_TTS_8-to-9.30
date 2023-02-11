@@ -1,0 +1,23 @@
+@media (min-width:992px) {
+    .container {
+        margin: 0px 50px;
+    }
+
+    /* ============= header section ================= */
+    .header .bg-image {
+        height: 650px;
+    }
+
+    .header .header-flex .logo {
+        flex: 2;
+    }
+
+    .header .header-flex .nav {
+        display: block;
+    }
+
+    .header .header-flex .show_menu {
+        display: none;
+        flex: 0
+    }
+}

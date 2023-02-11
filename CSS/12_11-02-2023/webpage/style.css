@@ -1,0 +1,123 @@
+/* ========== apply common css ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0px 50px;
+}
+
+/* ============= header section ================= */
+.header .bg-image {
+  background-image: url(images/banner1.jpg);
+  height: 650px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.header .bg-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.611);
+  z-index: -1;
+}
+
+.header .header-p {
+  padding: 20px;
+}
+
+.header .header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.header .header-flex .logo {
+  flex: 1;
+}
+
+.header .header-flex .logo span {
+  color: #f52029;
+  font-size: 30px;
+}
+
+.header .header-flex .logo a {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header .header-flex .nav {
+  flex: 4;
+}
+
+.header .header-flex .nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+.header .header-flex .nav ul a {
+  color: white;
+  font-weight: 700;
+  transition: 0.5s all ease;
+}
+
+.header .header-flex .nav ul a:hover {
+  color: #f52029;
+}
+
+.header .header-flex .nav ul .active {
+  color: #f52029
+}
+
+.header .header-flex .nav ul button {
+  height: 40px;
+  width: 40px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.header .header-flex .theme {
+  flex: 0.5;
+  padding-left: 15px;
+  font-size: 19px;
+}
+
+.header .header-flex .theme span {
+  color: white;
+}
+
+.header .header-flex .show_menu {
+  flex: 0.5;
+  display: none;
+}
+
+.header .header-flex .show_menu button {
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: white;
+  font-size: 22px;
+  background-color: #f52029;
+  border-radius: 5px;
+}
