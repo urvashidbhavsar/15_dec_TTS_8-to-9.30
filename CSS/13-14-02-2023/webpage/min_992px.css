@@ -1,0 +1,44 @@
+@media (min-width:992px) {
+    .container {
+        margin: 0px 50px;
+    }
+
+    /* ============= header section ================= */
+    .header .bg-image {
+        height: 650px;
+    }
+
+    .header .header-flex .logo {
+        flex: 2;
+    }
+
+    .header .header-flex .nav {
+        display: block;
+    }
+
+    .header .header-flex .show_menu {
+        display: none;
+        flex: 0
+    }
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 300px;
+    }
+
+    /* ============== service -1 ================ */
+    .services-1 .ser-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .services-1 .ser-flex .left-img {
+        padding: 0px;
+    }
+
+    .services-1 .ser-flex .left-img img {
+        height: 320px;
+        width: 420px;
+    }
+}

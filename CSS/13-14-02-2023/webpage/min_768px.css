@@ -1,0 +1,7 @@
+@media (min-width:768px) {
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 200px;
+    }
+}

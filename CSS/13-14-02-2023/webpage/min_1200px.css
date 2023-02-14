@@ -1,0 +1,22 @@
+@media (min-width:1200px) {
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 500px;
+    }
+
+    /* ============== service -1 ================ */
+
+    .services-1 .ser-flex .left-img {
+        padding: 0px 30px;
+    }
+
+    .services-1 .ser-flex .left-img img {
+        height: 350px;
+        width: 550px;
+    }
+
+    .services-1 .ser-flex .right-text h1 {
+        font-size: 45px;
+    }
+}
