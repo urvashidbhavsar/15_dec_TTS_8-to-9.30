@@ -1,0 +1,15 @@
+@media (min-width:768px) {
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 200px;
+    }
+       /* ================ service-2 ================== */
+  .service-2 .ser-2-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .service-2 .ser-2-flex .hover-img .text h2 {
+    font-size: 25px;
+  }
+}
