@@ -1,0 +1,59 @@
+@media (min-width:1200px) {
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 500px;
+    }
+
+    /* ============== service -1 ================ */
+
+    .services-1 .ser-flex .left-img {
+        padding: 0px 30px;
+    }
+
+    .services-1 .ser-flex .left-img img {
+        height: 350px;
+        width: 550px;
+    }
+
+    .services-1 .ser-flex .right-text h1 {
+        font-size: 45px;
+    }
+    /* ================ service-2 ================== */
+    .service-2 .ser-2-padd {
+      padding: 100px 0px;
+    }
+    .service-2 .ser-2-flex .hover-img .text {
+        top: 80px;
+        left: 50px;
+    }
+    .service-2 .ser-2-flex .hover-img .text h2 {
+        font-size: 40px;
+    }
+
+    /* =============== courier services ================= */
+    .cur-service .cur-ser-flx{
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+        /* ================= our services ================ */
+  .our-services .ser-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+    /* ================= customer review =============== */
+    .cust-review .cust-re-p{
+        padding: 100px 0px;
+      }
+
+    /* ================== form email ===================  */
+    .Email-form .bg-img .e-padding{
+       padding: 50px;
+    }
+    .Email-form .form-flex .left-content h1{
+      font-size: 35px;
+    }
+
+    /* footer section value inherit from min-width 992px */
+}

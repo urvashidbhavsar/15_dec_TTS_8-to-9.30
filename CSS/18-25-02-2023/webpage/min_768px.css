@@ -1,0 +1,55 @@
+@media (min-width:768px) {
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 200px;
+    }
+       /* ================ service-2 ================== */
+  .service-2 .ser-2-flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .service-2 .ser-2-flex .hover-img .text h2 {
+    font-size: 25px;
+  }
+     /* ================ fast services ===================== */
+     .fast-service .fast-p{
+      padding: 80px 20px;
+    }
+    .fast-service .fast-ser-flex{
+      display: flex;
+      flex-direction: column;
+    }
+    .fast-service .fast-ser-flex .left-animation{
+      padding: 100px 0px;
+    }
+     /* ================= our services ================ */
+  .our-services .ser-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+      /* =========== more services ==================  */
+.more-services .more-p .more-grid-ser{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+  /* ==================== customer review ===============
+  
+    inherit from min-width 576px 
+  */
+  .articles .card-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+  }
+
+    /* ================== form email ===================  */
+    .Email-form .bg-img .e-padding{
+      padding: 20px;
+    }
+    .Email-form .form-flex{
+      flex-direction: row;
+     }  
+
+     /* footer section inherit value from min-width 576px */
+}

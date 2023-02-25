@@ -1,0 +1,119 @@
+@media (min-width:992px) {
+    .container {
+        margin: 0px 50px;
+    }
+
+    /* ============= header section ================= */
+    .header .bg-image {
+        height: 650px;
+    }
+
+    .header .header-flex .logo {
+        flex: 2;
+    }
+
+    .header .header-flex .nav {
+        display: block;
+    }
+
+    .header .header-flex .show_menu {
+        display: none;
+        flex: 0
+    }
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 300px;
+    }
+
+    /* ============== service -1 ================ */
+    .services-1 .ser-flex {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .services-1 .ser-flex .left-img {
+        padding: 0px;
+    }
+
+    .services-1 .ser-flex .left-img img {
+        height: 320px;
+        width: 420px;
+    }
+      /* ================ service-2 ================== */
+    .service-2 .ser-2-padd {
+    padding: 50px 0px;
+  }
+  .service-2 .ser-2-flex .hover-img .text {
+    top: 20px;
+    left: 15px;
+  }
+  .service-2 .ser-2-flex .hover-img .text h2 {
+    font-size: 35px;
+  }
+     /* =============== courier services ================= */
+     .cur-service .cur-ser-flx{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+
+        /* ================ fast services ===================== */
+      .fast-service .fast-ser-flex{
+        display: flex;
+        flex-direction: row;
+      }
+      .fast-service .fast-ser-flex .left-animation{
+        padding: 0px;
+      }
+         /* ================= our services ================ */
+  .our-services .ser-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+        /* =========== more services ==================  */
+.more-services .more-p .more-grid-ser{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  /* ================= customer review =============== */
+  .cust-review .cust-re-p{
+    padding: 50px 0px;
+  }
+  .cust-review .customer-re-flex{
+    display: flex;
+    flex-direction: row;
+  } 
+
+  /* ============ articals section ================ */
+  .articles .card-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+
+    /* ================== form email ===================  */
+    .Email-form .form-flex .right-form .email-flex{
+      flex-direction: row;
+    }
+    .Email-form .form-flex .right-form .email-flex input[type="text"]{
+      width: 250px;
+    }
+    .Email-form .form-flex .right-form .email-flex button{
+      width: 120px;
+    }
+
+          /* ======================  footer  ================== */
+.footer .foooter-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+.footer .end-footer{
+display: flex;
+flex-direction: row;
+}
+.footer .end-footer .terms ul{
+padding-top: 0px;
+}
+}

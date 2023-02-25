@@ -1,0 +1,46 @@
+background 
+= background-color, background-size, background-position, background-image, background-attachment, background-repeat
+
+border
+= border, border-width, border-color, border-style
+border-top, border-top-width, border-top-color, border-top-style
+.... bottom, right and left
+border-radius
+border-top-left-radius, border-top-right-radius
+border-bottom-right-radius, border-bottom-left-radius
+border-image
+
+margin
+padding
+position => static, fixed, sticky, relative, absolute
+= top, bottom, left, right, z-index
+outline
+display
+
+display:flex
+    flex = flex-grow, flex-shrink, flex-basis
+    flex-direction
+    flex-wrap
+    justify-content
+    align-items
+    gap
+
+display:grid
+    grid-template-column
+    grid-template-row
+    gap
+    justify-items
+    place-content
+
+font
+text
+line-height, word-spacing, letter-spacing
+transition, transform, animation
+pseudo element and pseudo classes
+overflow
+height
+width
+filter
+opacity
+box-shadow
+media query

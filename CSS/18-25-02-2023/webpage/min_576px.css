@@ -1,0 +1,142 @@
+@media (min-width:576px) {
+
+    .container {
+        margin: 0px 30px;
+    }
+
+    /* ============= header section ================= */
+    .header .bg-image {
+        height: 600px;
+    }
+
+    .header .header-flex .logo {
+        flex: 10;
+    }
+
+    .header .header-flex .nav {
+        display: none;
+    }
+
+    .header .header-flex .show_menu {
+        display: block;
+        padding-left: 10px;
+    }
+
+    /* ===========background content ============== */
+    .background .image-text {
+        left: 50px;
+    }
+
+    /* ============== service -1 ================ */
+    .services-1 .ser-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .services-1 .ser-flex .left-img {
+        padding: 0px;
+    }
+
+    .services-1 .ser-flex .left-img img {
+        height: 300px;
+        width: 420px;
+    }
+
+    .services-1 .ser-flex .right-text h1 {
+        font-size: 35px;
+    }
+    /* ================ service-2 ================== */
+.service-2 .ser-2-padd {
+    padding: 50px 0px;
+  }
+  .service-2 .ser-2-flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .service-2 .ser-2-flex .hover-img .text {
+    top: 20px;
+    left: 15px;
+  }
+  .service-2 .ser-2-flex .hover-img .text h2 {
+    font-size: 30px;
+  }
+    /* =============== courier services ================= */
+    .cur-service .cur-ser-flx{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+      }
+
+        /* ================ fast services ===================== */
+  .fast-service .fast-p{
+    padding: 80px 0px;
+  }
+  .fast-service .fast-ser-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .fast-service .fast-ser-flex .left-animation{
+    padding: 100px 0px;
+  }
+   /* ================= our services ================ */
+   .our-services .ser-grid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+    /* =========== more services ==================  */
+.more-services .more-p .more-grid-ser{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+    /* ==================== customer review =============== */
+    .cust-review .cust-re-p{
+      padding: 50px 0px;
+    }
+    .cust-review .customer-re-flex{
+      display: flex;
+      flex-direction: column;
+    }
+      /* ================ articals ================ */
+  .articles .card-box{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+  }
+
+    /* ================== form email ===================  */
+    .Email-form .bg-img .e-padding{
+      padding: 20px;
+    }
+    .Email-form .form-flex{
+      flex-direction: column;
+     }
+    .Email-form .form-flex .left-content h1{
+      font-size: 30px;
+    }
+    .Email-form .form-flex .right-form .email-flex{
+      flex-direction: column;
+    }
+    .Email-form .form-flex .right-form .email-flex input[type="text"]{
+      width: 350px;
+    }
+    .Email-form .form-flex .right-form .email-flex button{
+      width: 350px;
+    }
+      /* ======================  footer  ================== */
+.footer .foooter-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.footer .end-footer{
+display: flex;
+flex-direction: column;
+text-align: center;
+}
+.footer .end-footer .terms ul{
+padding-top: 10px;
+justify-content: center;
+gap: 20px;
+}
+}
