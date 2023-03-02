@@ -1,0 +1,29 @@
+javascript is a scripting language.
+also known is object based scripting language.
+
+it is client side scripting language.
+
+when start?  = in year 1995
+by powerful netscape web browser.
+
+javascript created as 3 ways =
+(1) inline => called by events
+(2) internal => written in <script> tag. in <head> or <body> tag.
+(3) external => create an external file and link with <script> tag.
+
+object??
+=> object is a logical and physical items.
+for ex, chair
+chair_brand_name, color, size, price, quality =>these values are property of chair.
+
+person 
+name, address, language, behaviour, height, weight, age, date of birth, skills etc..  = these values are property of person.
+
+(1) keywords
+(2) variables
+(3) conditional statement
+(4) operators
+(5) events
+(6) functions
+(7) loops
+(8) datatypes

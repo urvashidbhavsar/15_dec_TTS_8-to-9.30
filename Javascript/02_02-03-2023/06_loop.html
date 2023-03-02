@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        loop is count number of iterations
+        (1) while
+        (2) do..while
+        (3) for
+
+        syntax: 
+        while(condition){
+            statements;
+        }
+        here, {} is indicate a block
+
+        do{
+            statements;
+        }while(condition)
+
+        for(initialization; condition; incre/decrement){
+            statement
+        }
+     -->
+    <script>
+        let num = 1;
+        while(num <= 10){
+            document.writeln(num)
+            num++;
+        }
+
+        while(num >= 1){
+            document.writeln(num);
+            num--
+        }
+        document.write("<br>")
+        var num2 = 1;
+        do{
+            document.writeln(num2);
+            num2++
+        }while(num2 < 11)
+
+        for(let num3=11; num3<=20; num3++){
+            document.writeln(num3)
+        }
+    </script>
+</body>
+</html>
