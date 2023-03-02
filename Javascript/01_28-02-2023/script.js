@@ -1,1 +1,0 @@
-document.write("this is javascript language")
