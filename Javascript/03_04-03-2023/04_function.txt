@@ -1,0 +1,34 @@
+=== function ===
+there is two type of function in programming
+(1) user define
+(2) predefine / built-in
+
+= functions are used to reduce your coding
+= reusable code
+
+predefine functions are => write(), writeln(), isNaN(), log()
+
+user define =>
+syntax :
+    function function_name(){
+        statements;
+    }
+
+    function function_name(param1, param2, param3){
+        statements
+    }
+
+===== events ====
+which is perform some task.
+there is 4 type of events = mouse, keyboard, form, window
+
+mouse events = click, double click, mouse over, mouse out, mouse leave..
+keyboard events = keyup, keydown, keypress
+form = submit
+window = load, resize, unload
+
+event handlers =
+who is handle the events
+click = onclick 
+dblclick = ondblclick
+submit = onsubmit

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter 1st Number : </label>
+        <input type="text" name="" id="num1">
+        
+        <br><br>
+
+        <label for="">Enter 2nd Number :</label>
+        <input type="text" name="" id="num2">
+
+        <br><br>
+        <button onclick="return find_minNum()">Click Here</button>
+    </form>
+    <p id="p1"></p>
+    <script>
+        function find_minNum(){
+            let n1 = document.getElementById("num1").value;
+            let n2 = document.getElementById("num2").value;
+
+            if(n1 < n2){
+                document.getElementById("p1").innerHTML = n1 + " num is minimum";
+                return false;
+            }else if(n2 < n1){
+                document.getElementById("p1").innerHTML = n2 + " num is minimum";
+                return false;
+            }else if(n1 == n2){
+                document.getElementById("p1").innerHTML = n1 + " and " + n2 + " are same";
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

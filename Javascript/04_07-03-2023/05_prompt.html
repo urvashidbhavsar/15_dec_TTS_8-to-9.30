@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Prompt_fn(){
+            // prompt take input from user
+            let uname = prompt("enter your name");
+            if(uname == ""){
+                alert("enter your name")
+            }else{
+                document.getElementById("p1").innerHTML = uname;
+            }   
+        }
+    </script>
+</head>
+<body>
+    <button onclick="return Prompt_fn()">Prompt popup</button>
+    <p id="p1"></p>
+</body>
+</html>

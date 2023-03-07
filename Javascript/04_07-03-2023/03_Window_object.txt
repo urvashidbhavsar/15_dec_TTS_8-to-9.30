@@ -1,0 +1,10 @@
+there are 5 funtions / methods are  for window :
+
+(1) alert()
+(2) prompt()
+(3) confirm()
+(4) open()
+(5) close()
+
+also known as popup boxes alert(), prompt() and confirm()
+popup boxes means show like a notification..
