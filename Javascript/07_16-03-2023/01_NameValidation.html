@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        // match(), test()
+        function check_name(){
+            let fname = document.getElementById("f_name").value;
+            if(fname == ""){
+                document.getElementById("msg1").innerHTML = "Enter your name";
+                return false;
+            }else{
+                document.getElementById("msg1").innerHTML = "";
+                return false;
+            }
+        }
+        function reg_ex_name(){
+            let fname = document.getElementById("f_name").value;
+            let name_reg_ex = /^[a-zA-Z]*$/;
+            if(name_reg_ex.test(fname)){
+                document.getElementById("msg1").innerHTML = ""
+                return false
+            }else{
+                document.getElementById("msg1").innerHTML = "number not allowed"
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="" name="form1">
+        <label for="">Enter your name : </label>
+        <input type="text" name="fname" id="f_name" onkeyup="return reg_ex_name()">
+        <span id="msg1"></span>
+
+        <br><br>
+        <button type="submit" onclick="return check_name()">Check Name</button>
+    </form>
+</body>
+</html>

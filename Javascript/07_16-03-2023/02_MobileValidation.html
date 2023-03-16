@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function check_mobile_no(){
+            let mob = document.getElementById("mno").value;
+            if(mob == ""){
+                document.getElementById("msg1").innerText = "Enter Mobile no"
+                return false
+            }
+        }
+        // reg ex
+        function check_reg_ex(){
+            let mob = document.getElementById("mno").value;
+            let mob_reg_ex = /^[0-9]*$/;
+            if(mob_reg_ex.test(mob)){
+                document.getElementById("msg1").innerText = ""
+                return false
+            }else{
+                document.getElementById("msg1").innerText = "Alphabets are not allowed"
+                return false
+            }
+        }
+        // check length
+        // length is a check value of input 
+        function check_length(){
+            let mob = document.getElementById("mno").value;
+            if(mob.length < 10){
+                document.getElementById("msg2").innerText = "mobile number must be in 10 digits";
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        <label for="">Enter Mobile No :</label>
+        <input type="text" name="mobile" id="mno" onkeyup="return check_reg_ex()" onblur="return check_length()" maxlength="10">
+        <br> <span id="msg1"></span>
+        <br> <span id="msg2"></span>
+
+        <br><br>
+        <button type="submit" onclick="return check_mobile_no()">Check Mobile No</button>
+    </form>
+</body>
+</html>
