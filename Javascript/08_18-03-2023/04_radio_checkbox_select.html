@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function form_valid(){
+            // let male = document.form1.gen[0].checked;
+            // let female = document.form1.gen[1].checked;
+
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            if(male == false && female == false){
+                document.getElementById("msg1").innerText = "select gender"
+                return false;
+            }
+
+            let c1 = document.getElementById("c1").checked;
+            let c2 = document.getElementById("c2").checked;
+            let c3 = document.getElementById("c3").checked;
+            if(c1 == false && c2 == false & c3 == false){
+                document.getElementById("msg2").innerText = "select hobbies"
+                return false;
+            }
+
+            let city = document.getElementById("city").value;
+            if(city == -1){
+                document.getElementById("msg3").innerHTML = "select cities";
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        <label for="">Gender</label>
+        <input type="radio" name="gen" id="male"> Male 
+        <input type="radio" name="gen" id="female"> Female 
+        <span id="msg1"></span>
+        <br><br>
+
+        <label for="">Hobbies</label>
+        <input type="checkbox" name="" id="c1">Playing
+        <input type="checkbox" name="" id="c2">Reading
+        <input type="checkbox" name="" id="c3">Dancing
+        <span id="msg2"></span>
+        <br><br>
+
+        <label for="">City</label>
+        <select name="city" id="city">
+            <option value="-1">---select---</option>
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+        </select>
+        <span id="msg3"></span>
+        <br><br>
+        <button type="submit" onclick="return form_valid()">Check Validation</button>
+    </form>
+</body>
+</html>

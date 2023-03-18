@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function check_email(){
+            let email  = document.getElementById("mail").value;
+            if(email == ""){
+                document.getElementById("msg").innerText = "enter email";
+                return false;
+            }
+        }
+        function reg_ex(){
+            // w3resource
+            let reg =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            let email  = document.getElementById("mail").value;
+
+            if(reg.test(email)){
+                document.getElementById("msg").innerText = "";
+                return false
+            }else{
+                document.getElementById("msg").innerText = "Enter email address properly...!!!";
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" name="form1">
+        <label for="">Email</label>
+        <input type="text" name="" id="mail" onkeyup="return reg_ex()">
+
+        <span id="msg"></span> <br><br>
+        <button type="submit" onclick="return check_email()">Check Email</button>
+    </form>
+</body>
+</html>
