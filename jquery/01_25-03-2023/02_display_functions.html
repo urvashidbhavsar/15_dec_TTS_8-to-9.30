@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- offline cdn -->
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".head").hide(2000);
+            })
+            $("#btn2").click(function(){
+                $(".head").show(5000);
+            })
+            $("#btn3").click(function(){
+                $(".head2").toggle(2000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- display function => hide(), show(), toggle() -->
+
+    <button id="btn1">Hide Function</button>
+    <button id="btn2">Show Function</button>
+    <button id="btn3">toggle Function</button>
+
+    <h1 class="head">Hello world</h1>
+    <h1 class="head2">Hello user</h1>
+</body>
+</html>
