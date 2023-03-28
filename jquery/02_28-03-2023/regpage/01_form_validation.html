@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="02_style.css">
+    <script src="02_full_form.js"></script>
+    <script src="02_reg_ex.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".regpage").toggle(2000);
+            })
+
+            $("#btn2").click(function(){
+                $(".regpage").fadeToggle(2000)
+            })
+
+            $("#btn3").click(function(){
+                $(".regpage").slideToggle(2000)
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- buttons -->
+    <button id="btn1">Toggle</button>
+    <button id="btn2">FadeToggle</button>
+    <button id="btn3">SlideToggle</button>
+    <hr>
+    <div class="regpage">
+        <h1>Register Here...</h1>
+        <form action="#" name="form1" method="get">
+            <!-- first name -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="fname" onkeyup="return firstname_reg_ex()">
+                </div>
+                <div class="col-2">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- last name -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="lname" onkeyup="return lastname_reg_ex()">
+                </div>
+                <div class="col-2">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+             <!-- gender -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col-2">
+                    <input type="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                </div>
+                <div class="col-2">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+             <!-- Date -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">Date of birth</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="" id="dob">
+                </div>
+                <div class="col-2">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+            <!-- Address -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">Address</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="" id="address" cols="40" rows="3" placeholder="Address must be in 15 to 50 character" maxlength="100" onblur="return check_address()"></textarea>
+                </div>
+                <div class="col-2">
+                    <span id="msg4"></span>
+                </div>
+            </div>
+            <!-- city -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">City</label>
+                </div>
+                <div class="col-2">
+                    <select name="" id="city">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Baroda</option>
+                    </select>
+                </div>
+                <div class="col-2">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+            <!-- Email id -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Email</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="mail" onblur="return reg_ex_email()">
+                </div>
+                <div class="col-2">
+                    <span id="msg6"></span>
+                </div>
+            </div>
+            <!-- Password -->
+              <div class="row">
+                <div class="col-1">
+                    <label for="">Password</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" name="" id="pass" onblur="return check_password()">
+                </div>
+                <div class="col-2">
+                    <span id="msg7"></span>
+                </div>
+            </div>
+             <!-- confirm Password -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">Confirm Password</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" name="" id="cpass" onkeyup="return check_cpassword()">
+                </div>
+                <div class="col-2">
+                    <span id="msg8"></span>
+                </div>
+            </div>
+             <!-- show password -->
+             <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                   <input type="checkbox" onclick="hide_show_password()">
+                   <label for="">Show Password</label>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Mobile no</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="mno" onkeyup="return check_mobile()" maxlength="10" onblur="return check_mobile_length()">
+                </div>
+                <div class="col-2">
+                    <span id="msg9"></span> <br>
+                    <span id="msg10"></span>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="row">
+                <div class="col-1">
+                </div>
+                <div class="col-2">
+                    <button type="submit" onclick="return all_blank()">Register</button>
+                </div>
+            </div>
+        </form>
+
+        <p style="color:blue; padding: 20px;"> Note :
+            Password between 8 to 12 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character
+        </p>
+    </div>
+</body>
+</html>

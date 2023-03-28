@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- jquery cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".img1").mouseover(function(){
+                $(".img1").fadeTo(2000,0.5);
+            })
+            $(".img1").mouseout(function(){
+                $(".img1").fadeTo(2000,1)
+            })
+        })
+    </script>
+</head>
+<body>
+    <img src="images.jpg" alt="" class="img1">
+</body>
+</html>

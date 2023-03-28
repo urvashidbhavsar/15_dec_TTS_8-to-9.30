@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .div1{
+            height: 200px;
+            width: 100%;
+            background-color: chocolate;
+        }
+
+        .div2{
+            height: 200px;
+            width: 100%;
+            background-color: darkcyan;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").slideUp(5000);
+            })
+
+            $("#btn2").click(function(){
+                $(".div1").slideDown(2000);
+            })
+
+            $("#btn3").click(function(){
+                $(".div2").slideToggle(2000);
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <!-- slide functions = slideUp(), slideDown(), slideToggle() 
+    
+    it worked on only height, overflow do not consider width
+-->
+
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+    <hr>
+    <div class="div1"></div> <br>
+    <div class="div2"></div>
+</body>
+</html>
