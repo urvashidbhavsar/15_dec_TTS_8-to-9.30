@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+         $(function(){
+            $('.bxslider').bxSlider({
+                mode:"fade",
+                speed:1000,
+                pager:false,
+                controls:false,
+                auto:true,
+                autoHover:true
+            });
+        });
+    </script>
+    <style>
+        .slider1{
+            background-image: url(images/img5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider2{
+            background-image: url(images/img6.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider3{
+            background-image: url(images/img7.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider4{
+            background-image: url(images/img8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+        <div class="slider1">
+            <h1 style="color:white">Hello world</h1>
+        </div>
+        <div class="slider2">
+            <h1 style="color:white">Hello user</h1>
+        </div>
+        <div class="slider3">
+            <h1 style="color:white">Welcome</h1>
+        </div>
+        <div class="slider4">
+            <h1 style="color:white">welcome, Hello world</h1>
+        </div>
+    </div>
+</body>
+</html>
