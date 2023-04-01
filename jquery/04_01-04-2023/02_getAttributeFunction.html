@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                alert($("#p1").text());
+            })
+
+            $("#btn2").click(function(){
+                alert($("#p2").html());
+            })
+
+            $("#btn3").click(function(){
+                alert($("#input1").val());
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- get or set attribute used 3 functions :
+        text(), html() and val()
+    -->
+    <button id="btn1">Text()</button>
+    <button id="btn2">html()</button>
+    <button id="btn3">val()</button>
+
+    <hr>
+
+    <p id="p1">
+        <b>this is jquery library</b>
+    </p>
+
+    <p id="p2">
+        <i><b>this is jquery library</b></i>
+    </p>
+
+    <input type="text" name="" id="input1" value="Hello user!!!">
+</body>
+</html>

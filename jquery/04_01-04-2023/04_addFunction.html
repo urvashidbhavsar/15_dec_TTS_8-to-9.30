@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("ul").append("<li>List added</li>")
+                $("h1").append("!!!");
+            })
+
+            $("#btn2").click(function(){
+                // $("ul").prepend("<li>List added</li>")
+                $("h1").prepend("!!!!")
+            })
+
+            $("#btn3").click(function(){
+                $("b").before("!!!")
+            })
+
+            $("#btn4").click(function(){
+                $("b").after("!!!")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- add function => 4 functions
+        (1) append()  = add value end of the content
+        (2) prepand() = add value beginning of the content
+        (3) before() = add value beginning of the content
+        (4) after() =add value end of the content
+
+        append or prepand used with block level element
+        after and before used with inline element
+    -->
+    <button id="btn1">Append()</button>
+    <button id="btn2">Prepand()</button>
+    <button id="btn3">Before()</button>
+    <button id="btn4">After()</button>
+
+    <hr>
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+
+    <h1>Hello world</h1>
+
+    <b>Hello user</b>
+</body>
+</html>
