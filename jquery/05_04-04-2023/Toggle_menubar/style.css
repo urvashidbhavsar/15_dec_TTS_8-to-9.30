@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0px 50px;
+}
+.header{
+    background-color: lightseagreen;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 1s all ease;
+}
+/* randomly class create for change bg for scroll page */
+.header-fixed{
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.header-fixed .header-flex .logo a{
+    color: black !important;
+}
+.header .header-p{
+    padding: 20px 0px;
+}
+.header .header-flex{
+    display: flex;
+    align-items: center;
+}
+.header .header-flex .logo{
+    flex: 1;
+}
+.header .header-flex .logo a{
+    color: white;
+}
+.header .header-flex .nav{
+    flex: 1;
+}
+.header .header-flex .nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.header .header-flex .nav .close-btn{
+    display: none;
+    height: 35px;
+    width: 35px;
+    border: 2px solid red;
+    background-color: transparent;
+    color: red;
+    border-radius: 5px;
+}
+.header .header-flex .nav a{
+    color: white;
+}
+.header .header-flex .theme{
+    flex: 0.5;
+    /* text-align: center; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.header .header-flex .theme .toggle-btn{
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+ /* randomly created class for toggle menubar */
+ .header .header-flex .nav-show{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+    height: auto;
+    width:40%;
+    background-color: darkblue;
+    z-index: 1;
+  }
+  .header .header-flex .nav-show ul{
+      display: flex;
+      flex-direction: column;
+  }
+  .header .header-flex .nav-show li{
+      padding: 10px;
+      text-align: center;
+  }
+  .bg-img{
+    background-image: url(img1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+  }
+
+/* media query */
+@media (max-width:576px) {
+    .header .header-flex .nav{
+        display: none;
+    }
+    .header .header-flex .theme .toggle-btn{
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+    .header .header-flex .nav-show .close-btn{
+        display: block;
+        margin: auto;
+    }
+    .header .header-flex .nav-show{
+        display: block;
+    }
+}
+@media (min-width:576px) {
+    .header .header-flex .nav{
+        display: none;
+    }
+    .header .header-flex .theme .toggle-btn{
+        display: block;
+        position: relative;
+        z-index: 0;
+    }
+    .header .header-flex .nav-show .close-btn{
+        display: block;
+        margin: auto;
+    }
+    .header .header-flex .nav-show{
+        display: block;
+    }
+}
+@media (min-width:992px) {
+    .header .header-flex .nav{
+        display: block;
+    }
+    .header .header-flex .theme .toggle-btn{
+        display: none;
+    }
+    .header .header-flex .nav-show .close-btn{
+        display: none;
+    }
+    .header .header-flex .nav-show{
+        display: none;
+    }
+}
+
+/* for full screen 
+.header .header-flex .nav-show{
+    position: absolute;
+    top:80px;
+    left: 0;
+    display: block;
+    height: auto;
+    width:100%;
+    background-color: darkblue;
+}*/

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .div1{
+            height: 350px;
+            width: 400px;
+            border: 10px solid black;
+            padding: 10px;
+            margin:20px;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            // $(".div1").height(200).width(300);
+            $txt ="";
+            $txt = "Height :" + $(".div1").height() + "<br>" + 
+            "Width :" + $(".div1").width() + "<br>" + 
+            "InnerHeight :" + $(".div1").innerHeight() + "<br>" + "InnerWidth :" + $(".div1").innerWidth() + "<br>" +
+            "OuterHeight :" + $(".div1").outerHeight() + "<br>" +
+            "OuterWidth :" + $(".div1").outerWidth() + "<br>" +
+            "OuterHeight(true) :" + $(".div1").outerHeight(true) + "<br>" +
+            "OuterWidth(true) :" + $(".div1").outerWidth(true) + "<br>"  
+            $(".div1").html($txt);
+        })
+    </script>
+</head>
+<body>
+    <!-- height(), width(), innerHeight(), innerWidth(), outerHeight(), outerWidth() -->
+    <div class="div1"></div>
+</body>
+</html>

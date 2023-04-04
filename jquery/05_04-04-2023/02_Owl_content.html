@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- owl-carousel cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- owl carousel js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            margin: 0px 80px;
+        }
+        .bio {
+            height: auto;
+            border: 2px solid black;
+        }
+        .bio .cust-img{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .bio .cust-img img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+    </style>
+      <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                nav:false,
+                dots:true,
+                autoplay:true,
+                autoplayTimeout:1000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    576:{
+                        items:1
+                    },
+                    800:{
+                        items:2,
+                    },
+                    1000:{
+                        items:3,
+                    }
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+    <div class="owl-theme owl-carousel">
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g2.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g3.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g2.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g3.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g2.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="bio">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ad cumque hic nihil aut error, nisi, eos ducimus rem aliquid est, quo ipsum? Vitae eveniet obcaecati eaque magni minima. Expedita?
+                </p>
+                <div class="cust-img">
+                    <div class="leftside">
+                        <img src="images/g3.jpg" alt="">
+                    </div>
+                    <div class="rightside">
+                       <p>Abc Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
