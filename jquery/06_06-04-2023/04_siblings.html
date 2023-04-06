@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+       div, h1{
+           margin: 10px;
+           border: 2px solid gray;
+       }
+       .set-color{
+           border: 2px solid red;
+       }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+            //    $(".sub").siblings(".sub1").addClass("set-color");
+            //    $(".sub1").next().addClass("set-color");
+            //    $(".sub").nextAll().addClass("set-color");
+            //    $(".sub").nextUntil(".sub3").addClass("set-color");
+            // $(".sub3").prev().addClass("set-color");
+            // $(".sub3").prevAll().addClass("set-color");
+            $(".sub3").prevUntil(".sub").addClass("set-color");
+
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Click Here</button>
+
+    <hr>
+    <div class="main">
+        <div class="sub">
+            <h1>Hello world</h1>
+        </div>
+        <div class="sub1">
+            <h3>Hello world</h3>
+        </div>
+        <div class="sub2">
+            <p>Hello world</p>
+        </div>
+        <div class="sub3">
+            <p>Hello world</p>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="sub1">
+            <h1>Hello world</h1>
+        </div>
+    </div>
+</body>
+</html>

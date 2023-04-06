@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-p">
+                <div class="header-flex">
+                    <div class="logo">
+                        <h1><a href="">Logo</a></h1>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li>
+                                <button class="close-btn">
+                                    <span class="fa-solid fa-close"></span>
+                                </button>
+                            </li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Service</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Pages</a></li>
+                        </ul>
+                    </div>
+                    <div class="theme">
+                        <div class="i-moon">
+                            <span class="fa-solid fa-moon"></span>
+                        </div>
+                        <div class="i-bars">
+                           <button class="toggle-btn">
+                                <span class="fa-solid fa-bars"></span>
+                           </button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-img">  
+        </div>
+    </section>
+    <!-- <script src="change_bg.js"></script> -->
+    <!-- <script src="toggle_menu.js"></script> -->
+
+    <script>
+        $(document).ready(function(){
+            $header_scroll= $(".header");
+            $(window).scroll(function(){
+                $scrolled = $(this).scrollTop();
+                // $("h1").addClass
+                if($scrolled > 0){
+                    $header_scroll.addClass("header-fixed");
+                }else{
+                    $header_scroll.removeClass("header-fixed");
+                }
+            })
+        })
+
+        // toggle menubar code 
+        $(document).ready(function(){
+            $(".toggle-btn").click(function(){
+                $(".nav").addClass("nav-show");
+            })
+
+            $(".close-btn").click(function(){
+                $(".nav").removeClass("nav-show");
+            })
+        })
+    </script>
+</body>
+</html>
