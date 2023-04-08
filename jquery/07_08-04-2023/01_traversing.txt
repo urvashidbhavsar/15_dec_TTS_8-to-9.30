@@ -1,0 +1,9 @@
+traversing means move through
+
+(1) ancestor => parent(), parents(), parentsUntil()
+
+(2) Decendent => children(), find()
+
+(3) Sibling => sliblings(), next(), nextAll(), nextUntil(), prev(), prevAll(), prevUntil();
+
+(4) filter => filter(), eq(), not(), first(), last()

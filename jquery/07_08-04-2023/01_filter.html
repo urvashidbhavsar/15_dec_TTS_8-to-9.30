@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                // $("div").filter(".p4").addClass("myclass")
+                // $("div").first().addClass("myclass");
+                // $("div").last().addClass("myclass");
+                // $("div").eq(2).addClass("myclass");
+                $("div").not(".p3").addClass("myclass")
+            })
+        })
+    </script>
+    <style>
+        .myclass{
+            color: red;
+        }
+        div{
+            font-size: 18px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ṭotal 5 functions => filter(), first(), last(), eq(), not() -->
+
+    <button class="btn1">Click here</button>
+    <hr>
+    <div class="p1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas iste sapiente cupiditate quaerat laudantium, earum nesciunt id illo non laborum magni sit, odio quam vero exercitationem dolorum rerum dicta eum!
+    </div>
+    <div class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo porro asperiores quia aliquam, qui officia quos ex laborum tenetur molestiae, harum similique enim reprehenderit laboriosam beatae, voluptates tempora voluptatibus veniam.
+    </div>
+    <div class="p3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora reiciendis minima pariatur laboriosam hic cupiditate sint, quos neque praesentium blanditiis repudiandae ratione sequi odit non laborum sed minus eligendi maiores!
+    </div>
+    <div class="p4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem deserunt sequi itaque adipisci voluptate esse perferendis cum ipsum voluptatibus nesciunt quae dolores beatae quos in harum fuga numquam, assumenda vel!
+    </div>
+</body>
+</html>

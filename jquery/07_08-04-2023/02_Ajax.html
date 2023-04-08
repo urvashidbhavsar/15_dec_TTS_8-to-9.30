@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("h1").load("01_traversing.txt")
+                // $(".div1").load("01_filter.html");
+                $(".div1").load("css.pdf")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- Ajax => asynchonised javascript and XML
+            XML => Extensible markup language
+
+        load external file without reloading
+    -->
+    <button id="btn1">Load External File</button>
+
+    <hr>
+    <!-- <h1 id="head"></h1> -->
+    <div class="div1"></div>
+</body>
+</html>
