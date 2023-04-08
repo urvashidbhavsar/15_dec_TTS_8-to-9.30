@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- object is a logical or physical items -->
+    <!-- here, person is object 
+        firstname, lastname and birthdate is property
+        and rightside its value
+
+        key-pair value
+    -->
+    <script>
+        var person = {
+            firstname : "Rohan",
+            lastname : "Patel",
+            birthdate : "20-12-2000",
+        }
+
+        console.log(person)
+        console.log(person.firstname)
+       
+        document.write(person + "<br>")
+        document.writeln(person.firstname)
+        document.writeln(person.lastname)
+        document.writeln(person.birthdate)
+
+        // to print object
+        for (const p in person) {
+                const element = person[p];
+                console.log(person[p])
+                document.write(element)
+        }
+    </script>
+</body>
+</html>
