@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../../FONTAWESOME_LIB/css/all.min.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .header {
+            width: 100%;
+            background-color: palevioletred;
+            padding: 20px;
+        }
+
+        .container {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .header-nav {
+            display: flex;
+        }
+
+        .header-nav .logo {
+            flex: 2;
+        }
+
+        .header-nav .logo span {
+            font-size: 60px;
+        }
+
+        .header-nav .nav {
+            flex: 3;
+        }
+
+        .header-nav .nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .header-nav .nav ul li {
+            padding: 20px;
+        }
+
+        .header-nav .disp-menu {
+            display: none;
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 10px;
+            position: relative;
+        }
+
+        .header-nav .nav .close-btn {
+            display: flex;
+            justify-content: right;
+        }
+
+        .header-nav .nav .close-btn button {
+            display: none;
+            height: 35px;
+            width: 35px;
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 7px;
+        }
+
+        header-nav .menu {
+            display: none;
+            height: auto;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            top: -100px;
+            right: 0px;
+            left: 0;
+            transition: 1s all ease;
+        }
+
+        .header-nav .menu ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header-nav .menu ul a {
+            color: white;
+        }
+
+        @media(max-width:576px) {
+            .container {
+                margin: 0;
+            }
+
+            .header-nav .nav {
+                display: none;
+            }
+
+            .header-nav .disp-menu {
+                display: block;
+                position: relative;
+            }
+
+            .header-nav .menu {
+                display: block;
+                height: auto;
+                width: 100%;
+                background-color: black;
+                position: absolute;
+                top: 0;
+                right: 0px;
+                left: 0;
+                transition: 1s all ease;
+            }
+
+            .header-nav .nav .close-btn button {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="header-nav">
+                <div class="logo">
+                    <a href=""><span class="fa-brands fa-html5"></span></a>
+                </div>
+                <div class="nav">
+                    <div class="close-btn">
+                        <button class="close">
+                            <span class="fa-solid fa-xmark"></span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+
+                <!-- set toggle button -->
+                <button class="disp-menu">
+                    <span class="fa-solid fa-bars" id="icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // let btn = document.querySelector(".disp-menu");
+        // let navi = document.querySelector(".nav");
+        // let icon = document.getElementById("icon")
+
+        // btn.addEventListener("click", function () {
+        //     navi.classList.toggle("menu");
+
+        //     if (navi.classList.contains("menu") == true) {
+        //         icon.classList.remove("fa-bars");
+        //         icon.classList.add("fa-xmark");
+        //     } else {
+        //         icon.classList.remove("fa-xmark");
+        //         icon.classList.add("fa-bars")
+        //     }
+        // })
+
+        $(document).ready(function () {
+            $(".disp-menu").click(function () {
+                $(".nav").addClass("menu").slideDown(5000);
+            })
+
+            $(".close").click(function () {
+                $(".nav").removeClass("menu").slideUp(5000);
+            })
+        });
+
+    </script>
+</body>
+
+</html>

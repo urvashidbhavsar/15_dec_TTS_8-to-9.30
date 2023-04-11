@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.jqZoom.css">
+    <link rel="stylesheet" href="css/topcss.css">
+</head>
+<body>   
+    <div class="container">
+        <h1>Magnify Image On Hover Example</h1>
+        <div class="example">
+            <div class="zoom-box">
+                <img src="image1.jpg" width="200" height="150" />
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/jquery.jqZoom.js"></script>
+    <script>
+        $(function(){
+            $("img").jqZoom({
+                selectorWidth: 30,
+                selectorHeight: 30,
+                viewerWidth: 400,
+                viewerHeight: 300
+            });
+    
+        })
+    </script>
+</body>
+</html>
