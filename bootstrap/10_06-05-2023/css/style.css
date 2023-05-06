@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* for headings */
+h1,h2,h3,h4,h5,h6,p{
+    font-family: Montserrat, sans-serif;
+    margin: 0 !important;
+}
+body{
+    font-family: Oxygen, sans-serif;
+}
+/* side button */
+.side-button{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: orange;
+    height: 40px;
+    width: 40px;
+    border: 2px solid orange;
+    display: grid;
+    place-content: center;
+}
+.side-button a{
+    color: white;
+    cursor: pointer; 
+}
+.modal{
+    z-index: 1115;
+}
+/* ============== header ============ */
+header{
+    /* background-color: rgb(14, 14, 53); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    transition: 1s ease-in-out all;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.header-fixed{
+    background-color: #0e0e35ca;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    transition: 1s ease-in-out all;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+header .navbar .navbar-brand{
+    color: orange;
+    font-weight: 700 !important;
+}
+header .navbar .navbar-toggler{
+    border-color: white !important;
+    background-color: aliceblue;
+}
+header .navbar .navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+header .navbar .navbar-nav a.active{
+    color: orange;
+}
+header .navbar .navbar-nav a{  
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+header .navbar .navbar-nav a:hover{
+    color: orange;  
+}
+header .navbar .btn-orange{
+    color: white;
+    background-color: orange;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+header .navbar .dropdown-menu a{
+    color: black;
+}
+header .icons{
+    padding-left: 10px;
+}
+/* === homepage image ====== */
+.homepage_image{
+    background-image: url(../images/homeImage.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.homepage_image::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0e0e35;
+    opacity: 0.9;
+    z-index: -1;
+}
+.homepage_image .set-content{
+    display: grid;
+    place-content: center;
+    animation: fadeInLeft 2s ease;
+}
+.homepage_image .btn-orange{
+    color: white;
+    background-color: orange;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.homepage_image img{
+    zoom: 2;
+}
+.homepage_image .img-rotate{
+    animation: image_rotation 10s linear infinite;
+}
+@keyframes image_rotation {     
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* about service */
+.about-service{
+    background-color: antiquewhite;
+}
+.about-service .service-box{
+    background-color: white;
+    transition: 0.1s linear all;
+}
+.about-service .service-box .icon span{
+    font-size: 35px;
+    color: orange;
+    transition: 0.1s linear all;
+}
+.about-service .service-box h5{
+    color: #0e0e35;
+    transition: 0.1s linear all;
+}
+.about-service .service-box:hover{
+    background-color: orange;
+}
+.about-service .service-box:hover span{
+    color:  white;
+}
+.about-service .service-box:hover h5{
+    color:  white;
+}
+.about-service .service-box:hover p{
+    color:  white !important;
+}
+/* ======== about us ======== */
+.about-us .image-small-1{
+    height: 75%;
+    width: 75%;
+    padding-top: 65px;
+}
+.about-us .image-small-2{
+    width: 75%;
+    height: 75%;
+    padding-bottom: 65px;
+    margin-left: 63px;
+}
+.about-us h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+}
+.about-us h5::after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: orange;
+    display: inline-block;
+    margin:5px;
+}
+.about-us h3 span{
+    color: orange;
+}
+.about-us h3{
+    font-weight: bold;
+    color: #0e0e35;
+}
+.about-us p{
+    font-size: 15px;
+}
+.about-us .exp{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-left: 5px solid orange;
+    padding-left: 10px;
+}
+.about-us .exp h2{
+    color: orange;
+    font-size: 45px;
+}
+.about-us p span{
+    color: #0e0e35;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.about-us .btn-orange{
+    background-color: orange;
+    color: white;
+    border-radius: 0;
+    height: 40px;
+    width: 150px;
+    text-transform: uppercase;
+}
+.about-us img{
+    animation: zoomIn 2s ease;
+}
+/* ====== food section ======== */
+.FoodItems h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+}
+.FoodItems h5::before{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.FoodItems h5::after{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.FoodItems .list-group{
+    flex-direction: row;
+}
+.FoodItems .tabItems{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+.FoodItems .tabItems .fa-solid{
+    color: orange;
+    font-size: 35px;
+}
+.FoodItems .tabItems{
+    font-weight: bold;
+}
+.FoodItems .list-group-item.active {
+    background-color: transparent !important;
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    color: black !important;
+    border-bottom-color: orange !important;
+}
+.FoodItems .tabIcons{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+.FoodItems .rightIcon span{
+    font-size: 12px;
+}
+.FoodItems .itemsDetails .upval{
+    display: flex;
+    justify-content: space-between;
+}
+.bookingSec .videoplay{
+    background-image: url(../images/video.jpg); 
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0px;
+}
+.bookingSec .videoplay .video-icon{
+    height: 80px;
+    width: 80px;
+    background-color: orange;
+    color:#0e0e35;
+    display: grid;
+    place-content: center;
+    margin: auto;
+    border-radius: 50%;
+    animation: video_animate 1.5s ease-in-out infinite;
+}
+.bookingSec .video-icon span{
+    font-size: 25px;
+}
+@keyframes video_animate {
+    0%{
+        box-shadow: 0px 0px 0px 0px orange;
+    }
+    100%{
+        box-shadow: 0px 0px 0px 20px rgba(255, 166, 0, 0.66),
+        0px 0px 0px 30px rgba(255, 166, 0, 0.365);
+    }
+}
+.bookingSec .bookingForm{
+    background-color: #0e0e35;
+}
+.bookingSec h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.bookingSec h5::after{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.bookingSec h1{
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.bookingSec .bookingForm input[type="text"]{
+    border-radius: 0;
+}
+.bookingSec .bookingForm .btn-orange{
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid orange;
+    width: 100%;
+}
+/* ==== member section === */
+.members h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.members h5::after{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.members h5::before{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.members h1{
+    color: #0e0e35;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.members .about-member{
+    box-shadow: 4px 0px 5px 0px gray;   
+    transition: 0.5s ease-in-out all;
+    position: relative;
+    z-index: 1;
+}
+.members .about-member .image{
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 20px;
+}
+.members .about-member img{
+    border-radius: 50%;
+    transition: 0.5s ease-in-out all;
+}
+.members .about-member:hover img{
+    transform: scale(1.1);
+}
+.members .about-member .text h6{
+    color: #0e0e35;
+    font-weight: 700;
+}
+.members .about-member .social{
+    display: none;
+    bottom: 0;
+    z-index: -1;
+}
+.members .about-member .social .icon{
+    height: 35px;
+    width: 35px;
+    background-color: orange;
+    color: white;
+    display: grid;
+    place-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* ========= testimonials ========== */
+.testimonials h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+.testimonials h5::after{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.testimonials h5::before{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+.testimonials h1{
+    color: #0e0e35;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.testimonials .client-details{
+    border: 1px solid gray;
+    padding: 20px;
+}
+.testimonials .fa-quote-left{
+    color: orange;
+}
+.testimonials img{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.testimonials h6{
+    color: #0e0e35;
+    padding-bottom: 10px;
+}
+.testimonials .client-details{
+    margin: 10px;
+}
+/* ========== footer ============= */
+footer{
+    background-color: #0e0e35;
+    color: white;
+}
+footer h5{
+    font-family: "Dancing Script";
+    color: orange;
+    font-size: 26px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+footer h5::after{
+    content: "";
+    height: 2px;
+    width: 60px;
+    background-color: orange;
+    display: inline-block;
+    margin: 6px;
+}
+footer .about-comp{
+    line-height: 40px;
+}
+footer .about-comp a{
+    color: white;
+    padding-left: 10px;
+    letter-spacing: 0;
+    transition: 0.5s ease all;
+}
+footer .about-comp a:hover{
+    letter-spacing: 2px;
+}
+footer .contact-comp {
+    line-height: 30px;
+}
+footer .contact-comp span{
+    padding-right: 10px;
+}
+footer .social-icons-footer{
+    padding: 10px 0px;
+    display: flex;
+    gap: 10px;
+}
+footer .social-icons-footer .icon{
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+footer .social-icons-footer .icon span{
+    transition: 0.5s ease all;
+}
+footer .social-icons-footer .icon:hover{
+    background-color: white;
+}
+footer .social-icons-footer .icon:hover span{
+    color: orange;
+}
+footer .op-fs{
+    font-size: 12px;
+}
+
+/*  ============ media query ========== */
+@media (max-width:576px){
+    .about-us .image-small-1{
+        height: 100%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .about-us .image-small-2{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        margin-left: 0;
+    }
+    .bookingSec .booking-value{
+        display: flex;
+        flex-direction: column;
+    }
+    header .icons{
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+@media (min-width:576px){
+    .about-us .image-small-1{
+        height: 100%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .about-us .image-small-2{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        margin-left: 0;
+    }
+    header .icons{
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+@media (min-width:768px){
+    .about-us .image-small-1{
+        height: 75%;
+        width: 75%;
+        padding-top: 80px;
+    }
+    .about-us .image-small-2{
+        width: 75%;
+        height: 75%;
+        padding-bottom: 65px;
+        margin-left: 79px;
+    }
+    header .icons{
+        padding-left: 0;
+        padding-top: 10px;
+    }
+}
+@media (min-width:992px){
+    .about-us .image-small-1{
+        height: 75%;
+        width: 75%;
+        padding-top: 65px;
+    }
+    .about-us .image-small-2{
+        width: 75%;
+        height: 75%;
+        padding-bottom: 65px;
+        margin-left: 63px;
+    }
+    header .icons{
+        padding-left: 10px;
+        padding-top: 0;
+    }
+}
+
+/* ========= registration page ==== */
+.regpage{
+    background: linear-gradient(to left, #021b34, #396ea3);
+}
+label{
+    font-size: 18px;
+    color: black;
+}
+input[type="text"],[type="date"],[type="password"]{
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    /* color: white !important; */
+}
+textarea,select,.input-group-text{
+    border-radius: 0 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid black !important;
+    background-color: transparent !important;
+}
+input[type="text"]:focus,[type="date"]:focus,[type="password"]:focus{
+    box-shadow: none;
+    border-color: black;
+    background-color: transparent;
+}
+input[type=radio]{
+    border: 1px solid black;
+}
+textarea:focus,select:focus{
+    box-shadow: none !important;
+    border-color: black !important;
+}
+option{
+    box-shadow: 0px 0px 5px gray;
+}
+.offcanvas{
+    z-index: 1120;
+}
+.searchval{
+    border: 2px solid white;
+    color: white !important;
+}
+.searchval::placeholder{
+    color: white;
+}
+.btn-white{
+background-color: white !important;
+color: black !important;
+border: none !important;
+width: 100px !important;
+border-radius: 0 10px 10px 0 !important;
+}
