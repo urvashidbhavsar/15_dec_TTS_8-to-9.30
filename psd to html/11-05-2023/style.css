@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto";
+    margin: 0 !important;
+}
+/* ========= all section background ============== */
+.menu,.about,.discount,.subscribe{
+    background-color: #ffd7ad;
+}
+/* ============ header navigation ========== */
+header{
+    background-color: #4a1831;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px
+}
+header ul li{
+    padding: 20px;
+}
+header ul li a{
+    color: white !important;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+}
+/*  =============== homepage =========== */
+.homepage{
+    background-image: url(images/homeImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px;
+}
+.homepage .complogo{
+    height: 100px;
+    width: 100px;
+}
+.homepage h1{
+    color: #ffd7ad;
+    font-size: 65px;
+}
+.homepage p{
+    color: #ffd7ad;
+}
+.homepage button{
+    height: 40px;
+    width: 150px;
+    background-color: #ffd7ad;
+    color: #4a1831;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    font-weight: 700;
+}
+/* ============== menu section =============== */
+.menu h1{
+    color: #4a1831;
+    font-size: 50px;
+}
+.menu p{
+    color: #4a1831;
+}
+.menu button{
+    height: 40px;
+    width: 150px;
+    background-color: #4a1831;
+    color:#ffd7ad;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    font-weight: 700;
+}
+/* ============ about ======= */
+.about .about-us{
+    display: flex;
+    align-items: center;
+}
+.about h1{
+    color: #4a1831;
+    font-size: 50px;
+}
+.about p{
+    color: #4a1831;
+}
+.about button{
+    height: 40px;
+    width: 150px;
+    background-color: #4a1831;
+    color:#ffd7ad;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    font-weight: 700;
+}
+/* ============== discount section ========== */
+.dis-image .image-text{
+    position: relative;
+}
+.dis-image .image-text h1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #e63956;
+    font-size: 100px;
+    font-weight: 700;
+}
+.dis-image .image-text h3{
+    color: #55112e;
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 82px;
+    left: 0;
+}
+.dis-image .image-text h2{
+    color: #6cc5ac;
+    font-size: 90px;
+    font-weight: 900;
+    position: absolute;
+    top: 145px;
+    left: 0;
+}
+.discount .bg-image{
+    background-image: url(images/discount.png);
+    height: 500px;
+    padding: 100px 0px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+/* ====================== offer section ====== */
+.offers{
+    background-color: #55112e;
+}
+.offers h1,p{
+    color: #ffd7ad;
+}
+.offers button{
+    height: 40px;
+    width: 150px;
+    background-color: #ffd7ad;
+    color:#4a1831;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.offers-2 .bgimage{
+    background-image: url(images/bgimage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    /* height: 500px; */
+}
+.offers-2 .bgimage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0000008d;
+    z-index: -1;
+}
+.offers-2 .text{
+    width: 70%;
+    margin: auto;
+    font-size: 25px;
+}
+.offers-2 .text h5{
+    font-size: 30px;
+    color: #ffd7ad;
+}
+/* ============== subscribe ================ */
+.subscribe h1{
+    color: #55112e;
+    text-transform: capitalize;
+}
+.subscribe p{
+    color: #55112e;
+    width: 50%;
+    margin: auto;
+}
+.subscribe form{
+    width: 50%;
+    margin: auto;
+    position: relative;
+}
+.subscribe input[type="text"]{
+    height: 40px;
+    width: 500px;
+    padding-left: 20px;
+    padding-right: 140px;
+    border-radius: 40px;
+    border: none;
+}
+.subscribe input[type="text"]:focus-visible{
+    outline: none;
+}
+.subscribe button{
+    position: absolute;
+    top :0;
+    right: 0;
+    height: 40px;
+    width: 150px;
+    background-color: #4a1831;
+    color:#ffd7ad;
+    border-radius: 40px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+/* =============== footer ========== */
+.footer{
+    background-color: #55112e;
+}
+.footer h4{
+    color: #ffd7ad;
+    text-transform: capitalize;
+}
+.footer .icon{
+    height: 30px;
+    width: 30px;
+    background-color: #ffd7ad;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+.footer .icon a{
+    color: #55112e;
+}
+.footer ul{
+    line-height: 35px;
+}
+.footer ul a{
+    color: #ffd7ad;
+    text-transform: capitalize;
+}
+.footer ul a:hover{
+    color: white;
+}
+/* ============ media Query =========== */
+@media (max-width:576px) {
+    header ul{
+        gap:5px
+    }
+    header ul li{
+        padding: 10px;
+    }
+    .subscribe form{
+        width: 100%;
+    }
+    .subscribe input[type="text"]{
+        width: 300px;
+        padding-right: 100px;
+    }
+}
+@media (min-width:576px) {
+    .subscribe form{
+        width: 100%;
+    }
+    .subscribe input[type="text"]{
+        width: 300px;
+        padding-right: 100px;
+    }
+}
+@media (min-width:768px) {
+    .subscribe form{
+        width: 80%;
+    }
+    .subscribe input[type="text"]{
+        width: 400px;
+        padding-right: 100px;
+    }
+}
+@media (min-width:992px) {
+    .subscribe form{
+        width: 50%;
+    }
+    .subscribe input[type="text"]{
+        width: 400px;
+        padding-right: 120px;
+    }
+}
+@media (min-width:1200px) {
+    .subscribe form{
+        width: 50%;
+    }
+    .subscribe input[type="text"]{
+        width: 500px;
+        padding-right: 140px;
+    }
+}
+
+
+
+
+
+
